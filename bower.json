@@ -1,0 +1,23 @@
+{
+  "name": "jquery-ga-universal",
+  "version": "1.0.0",
+  "authors": [
+    "Dirk Sidney Jansen <sid@sidisinsane.com>"
+  ],
+  "main": "jquery.ga-universal.js",
+  "keywords": [
+    "jquery",
+    "google",
+    "tracking",
+    "analytics"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sidisinsane/jquery-ga-universal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

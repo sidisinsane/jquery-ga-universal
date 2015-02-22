@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JQuery Google Analytics Universal</title>
+</head>
+<body>
+  <form action="" target="_blank">
+    <input type="submit">
+  </form>
+  <p>
+    <a href="https://developers.google.com/speed/libraries/devguide" target="_blank">External Text Link</a>
+  </p>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="jquery.ga-universal.js"></script>
+  <script>
+  jQuery(document).ready(function($) {
+    $.gaUniversalCode({
+        'trackingId'      : 'UA-XXXXXXXX-XX',
+        'anonymizeIp'     : true,
+        'pageview'        : true,
+        'displayfeatures' : true,
+        'cookieDomain'    : 'none',
+        'test'            : true,
+        'debug'           : true
+    });
+
+    $('form').gaUniversalEventSubmit({
+      eventCategory   : false,
+      eventLog        : true
+    });
+
+    $('a').gaUniversalEventClick({
+      eventCategory   : false,
+      eventLog        : true
+    });
+  });
+  </script>
+</body>
+</html>
